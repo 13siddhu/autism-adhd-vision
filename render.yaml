@@ -3,7 +3,7 @@ services:
     name: autism-adhd-backend
     runtime: docker
     # We point to the backend directory as the context for Docker
-    dockerContext: backend
+    dockerContext: .
     dockerfilePath: backend/Dockerfile
     plan: free # Change to 'pro' if you need more resources for ML
     envVars:
